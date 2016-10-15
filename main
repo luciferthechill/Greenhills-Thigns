@@ -36,10 +36,11 @@ def total(hand):
         while True:                                                                                 #player turn
             tp = total(player)                                                                      #player total
             print ("The player has these cards {} with a total value of {}.".format(player, tp)     #update player on their hand
-            if tp > 21                                                                              #total over 21 (bust)
-                print ("The player is busted!")                                                     #inform player                 playerBust = True                                                                   #update bust status
+            if tp > 21:                                                                              #total over 21 (bust)
+                print ("The player is busted!")                                                     #inform player                 
+                playerBust = True                                                                   #update bust status
                 break                                                                               #escape loop
-            elif tp == 21                                                                           #blackjack scenario
+            elif tp == 21:                                                                           #blackjack scenario
                 print ("\a Blackjack!")                                                             #inform player
                 break                                                                               #escape loop
             else:                                                                                   #less than 18, hit or stand
