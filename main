@@ -39,8 +39,8 @@ def total(hand):
             if tp > 21                                                                              #total over 21 (bust)
                 print ("The player is busted!")                                                     #inform player                 playerBust = True                                                                   #update bust status
                 break                                                                               #escape loop
-            elif tp == 21:                                                                           #blackjack scenario
-                print ("\a Blackjack!")                                                           #inform player
+            elif tp == 21                                                                           #blackjack scenario
+                print ("\a Blackjack!")                                                             #inform player
                 break                                                                               #escape loop
             else:                                                                                   #less than 18, hit or stand
                 hs = raw_input("Hit or Stand/Done (h or s): ").lower()                              #ask player h or s in lower case
